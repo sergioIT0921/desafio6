@@ -1,0 +1,445 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(196, 183, 166);
+}
+
+a, li {
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 80%;
+}
+    .header{
+        width: auto;
+        height: 900px;
+        background: url(../imagenBebe/imag1.jpg);
+        background-position: top;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+        
+
+    }
+        .menu{
+            background: rgba(0, 0, 0, .1);
+            display: flex;
+            flex-flow: row;
+            height: 90px;
+            align-items: center;
+            border-bottom: 1px solid  rgba(255,255,255,0.5);
+        }
+            .logo{
+                flex: 1 1 auto;
+                font-family: 'Nova Slim', cursive;
+                opacity:0.4;
+                text-transform: uppercase;
+                font-size: 40px;
+                text-align: center;
+                
+            }
+            .nav{
+                flex: 5 1 auto;
+                letter-spacing: 20px;
+                text-align: center;
+            }
+
+                .nav ul li{
+                    font-family: 'Amatic SC', cursive;
+                    letter-spacing: 3px;
+                    text-align: center;
+                    display: inline-block;
+                }
+                    .nav a {
+                        color: rgb(129, 114, 95);
+                        font-weight: 100;
+                        font-size: 25px;
+                        word-spacing: 100px;
+
+                    }
+                    .nav a:hover{
+                        color: rgb(48, 43, 36);
+                    }
+            .social {
+                flex: 2 1 auto;
+                text-align: center;
+            }
+                .social .social-icon a {
+                    color: rgb(129, 114, 95);
+                    letter-spacing: 20px;
+                    font-size: 30px;
+                }
+                    .social-icon a:hover{
+                        color: rgb(48, 43, 36);
+                    }
+        .texto-principal{
+            background: rgba(0, 0, 0, .0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 900px;
+            
+        }
+            h1{
+                font-family: 'Rye', cursive;
+                font-size:50px;
+                font-weight: 50;
+                color: rgb(160, 137, 108);
+            }
+                h1:hover{
+                    color: rgb(105, 85, 60);
+                }
+    .section{
+        background: rgb(0, 0,0, .1);
+        display: flex;
+        margin: 10px;
+        text-align: center;
+        border-bottom: 2px solid rgb(160, 137, 108);;
+    }
+        .articulos-1{
+            flex: 1 1 auto;
+            flex-flow: row;
+        }
+        .articulos-2{
+            flex: 1 1 auto;
+            flex-flow: row;
+        }
+        .articulos-3{
+            flex: 1 1 auto;
+            flex-flow: row; 
+        }
+        .article{
+            margin: 10px; 
+        }
+            .article img{
+               width: 90%;  
+            }
+        .aside{
+            flex: 1 1 auto;
+            flex-flow: column;
+            margin-top: 10px;
+            padding: 20px;
+            border: 1px solid rgb(196, 166, 136);
+        }
+            .aside-texto{
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+            .publicidad img{
+                width: 200px;
+                margin-bottom: 10px;
+            }
+    .footer{
+        background: rgb(168, 173, 231);
+        height: 240px;
+        text-align: center;
+        margin-top: -10px;
+        padding: 10px;
+        color: brown;
+    }
+    .grupo1{
+        display: flex;
+        flex-direction: row;
+    }
+        .footer div h3{
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+            .Footer-navegacion{
+                flex: 2 1 auto;
+            }
+                .Footer-navegacion li {
+                    margin: 5px;
+                }
+            .mediosPago{
+                flex: 1 1 auto;
+            }
+                .mediosPago img{
+                    width: 50px;
+                }
+                .mediosPago div{
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+                }
+            .suscribite{
+                flex: 1 1 auto;
+            }
+                .suscribite input {
+                    font-size: 20px;
+                    margin-bottom: 10px;  
+            }
+                .boton span input{
+                    background-color: rgb(103, 103, 168);
+                    color: rgb(234, 234, 241);
+                    padding: 5px 20px;
+                    border-radius: 30px;
+                }
+        .grupo2{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+            .terminos{
+                border-top:1px solid maroon;
+                margin: 5px;
+            }
+            .terminos .condicion{
+                padding-top: 20px;
+                
+            }
+
+@media all and (max-width: 1200px){
+    .header{
+        width: auto;
+        height: auto;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+        .logo{
+            flex-direction: column;
+        }
+        .nav {
+            flex-direction: column;
+        }
+        .section{
+            display: flex;
+            margin: 10px;
+            text-align: center;
+            border-bottom: 2px solid rgb(160, 137, 108);;
+        }
+            .articulos-1{
+                flex: 1 1 auto;
+                flex-flow: row;
+            }
+            .articulos-2{
+                flex: 1 1 auto;
+                flex-flow: row;
+            }
+            .articulos-3{
+                flex: 1 1 auto;
+                flex-flow: row; 
+            }
+            .article{
+                margin: 10px; 
+            }
+                .article img{
+                   width: 80%;  
+                }
+        .aside{
+            flex: 1 1 auto;
+            flex-flow: column;
+        }
+            .publicidad img{
+                width: 90%;
+            }
+        
+}
+
+@media all and (max-width: 800px){
+    .header{
+        background-position: top;
+        flex-flow: column nowrap;
+        background-size: cover;
+        max-width: 100%;
+        max-height: 500px;
+    }
+    .texto-principal h1{
+        font-size:30px;
+        letter-spacing: 3px;
+    }
+}
+
+@media all and (max-width: 550px){
+    .header{
+        background-size: cover;
+        max-width: 100%;
+        max-height: 300px;
+    }
+    .nav ul li i{
+        display: none; 
+    }
+    .menu{
+        display: block;
+    }
+        .nav ul li{
+            display: block;
+            text-align: left;
+        }
+            .nav a{
+                color: rgb(86, 68, 187);
+                padding-left: 10px;
+            }
+            .nav a:hover{
+                color: black;
+            }
+        
+        .social-icon {
+            display: block;
+            text-align: left;
+        }
+        .social-icon i{
+            color: rgb(35, 115, 129);
+        }
+        .texto-principal h1{
+            color:rgb(35, 115, 129);
+        }
+    .section{
+        display: block;
+    }
+        .articulos-1{
+            display: flex;
+        }
+        .articulos-2{
+            display: flex;
+        }
+        .articulos-3{
+            display: flex;
+        }
+        .aside{
+            display: flex;
+            justify-content: space-evenly;
+        }
+            .enColumna{
+                display: flex;
+                justify-content: space-evenly;            }
+                .publicidad{
+                    display: inline-block;
+                }
+                .publicidad img{
+                    width: 100px;
+                }
+    
+}
+
+/* **************** GRIDS ***************** */
+
+.padre-GRID{
+    display: grid;
+    margin: 0px;
+    grid-template-areas:
+    "nav header header"
+    "nav articulo-a aside"
+    "nav articulo-b aside"
+    "nav footer footer"
+    ;
+    grid-template-rows: 150px 1fr 1fr auto;
+    grid-template-columns: 25% auto 20%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+    background-color: rgb(206, 156, 156)
+}
+.BORDER{
+    border: 1px solid rgb(231, 185, 185);
+    padding: 10px;
+    background-color: rgb(206, 156, 156)
+}    
+header{
+    grid-area: header;
+}  
+footer{
+    grid-area: footer;
+}  
+main .articulo-a{
+    grid-area: main;
+}
+main .articulo-b{
+    grid-area: main;
+}
+nav{
+    grid-area: nav;
+}
+aside{
+    grid-area: aside;
+}
+
+.header-grid{
+    text-align: center;
+}
+.nav-grid h2{
+    font-size: 20px;
+    padding: 30px;
+    text-align: left;
+    color: rgb(129, 114, 95);
+}
+.nav-grid ul li{
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 30px;
+            color: rgb(129, 114, 95);
+
+}
+    .nav-grid a {
+        color: rgb(129, 114, 95);
+        font-weight: 100;
+        font-size: 25px;
+        word-spacing: 100px;
+    }
+    .nav-grid a:hover{
+        color: rgb(48, 43, 36);
+    }
+    .social-grid {
+        text-align: center;
+        padding: 20px;
+    }
+        .social-grid .social-icon a {
+            color: rgb(129, 114, 95);
+            font-size: 50px;
+            letter-spacing: 30px;
+        }
+            .social-icon a:hover{
+                color: rgb(48, 43, 36);
+            }
+
+.contenedor-main{
+    width: 100%;
+    height: 1000px;
+}
+
+/* -- ESTILOS PARA BOOTSTRAP */
+.nav-color{
+    background-color: rgb(230, 230, 179);
+}
+    .line:hover{
+        text-decoration: none;
+    }
+.tamaño{
+    width: 100%;
+    height: 600px;
+}
+.scale:hover{
+    transform: scale(1.2);
+}
+
+
+/* responsive */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
